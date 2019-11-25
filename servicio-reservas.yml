@@ -9,7 +9,7 @@ eureka:
   instance:
     ip-adress: 10.2.4.43 #ip del servicio que se registra
     prefer-ip-adress: true
-    instance-id: 10.2.4.43:7000 #ip + puerto nombre con el que aparece en eureka
+    instance-id: 10.2.4.43:7200 #ip + puerto nombre con el que aparece en eureka
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
