@@ -5,4 +5,8 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://10.2.4.43:8761/eureka #direccion eureka
+  instance:
+    ip-adress: 10.2.4.43 #ip del servicio que se registra
+    prefer-ip-adress: true
+    instance-id: 10.2.4.43:7000 #ip + puerto nombre con el que aparece en eureka
