@@ -16,4 +16,4 @@ zuul:
 eureka:                  
   client:
     serviceUrl:
-      defaultZone: http://10.2.4.25:8761/eureka
+      defaultZone: http://10.2.4.43:8761/eureka
