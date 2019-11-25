@@ -5,4 +5,22 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://10.2.4.43:8761/eureka
+  instance:
+    ip-adress: 10.2.4.43 #ip del servicio que se registra
+    prefer-ip-adress: true
+    instance-id: 10.2.4.43:7000 #ip + puerto nombre con el que aparece en eureka
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.2.4.43:3306/viajes
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+url:
+  servicio:
+    vuelos: http://servicio-vuelos/vuelos/actualizarPlazas
