@@ -5,15 +5,15 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://10.2.4.43:8761/eureka #direccion eureka
+      defaultZone: http://10.2.4.36:8761/eureka #direccion eureka
   instance:
-    ip-adress: 10.2.4.43 #ip del servicio que se registra
+    ip-adress: 10.2.4.36 #ip del servicio que se registra
     prefer-ip-adress: true
-    instance-id: 10.2.4.43:7300 #ip + puerto nombre con el que aparece en eureka
+    instance-id: 10.2.4.36:7300 #ip + puerto nombre con el que aparece en eureka
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/viajes
+    url: jdbc:mysql://10.2.4.43:3306/viajes
     username: root
     password: root
   jpa:
